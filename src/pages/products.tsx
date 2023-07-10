@@ -7,7 +7,7 @@ const Products: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Nossos Produtos</title>
+        <title>Nossos Prohhhhdutos</title>
         <meta name="description" content="Conheça todos os nossos produtos" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
