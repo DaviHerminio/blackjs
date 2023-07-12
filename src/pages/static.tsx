@@ -39,15 +39,16 @@ export const getStaticProps: GetStaticProps = async () => {
       <h1 className="my-5">
         Como funcionam as renderizações do Next.js
       </h1>
-      <h2>
-        {props.staticData?.timestamp.toString()}
-      </h2>
+   
 
       <Row>
         <Col>
           <h3>
             Gerado estaticamente durante o build:
           </h3>
+          <h2>
+        {props.staticData?.timestamp.toString()}
+      </h2>
         </Col>
 
         <Col>
