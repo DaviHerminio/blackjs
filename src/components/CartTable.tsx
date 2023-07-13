@@ -50,7 +50,7 @@ const CartTableRow = (props: {
           size="sm"
           onClick={() => removeProduct(props.entry.product.id)}
         >
-          –
+          
         </Button>
       </td>
     </tr>
