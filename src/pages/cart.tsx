@@ -1,11 +1,11 @@
 // pages/cart.tsx
 
-import CartTable from "@/components/CartTable";
-import CartTotal from "@/components/CartTotal";
-import Header from "@/components/Header";
-import { NextPage } from "next";
-import Head from "next/head";
-import { Container } from "reactstrap";
+import { NextPage } from "next"
+import Head from "next/head"
+import { Container } from "reactstrap"
+import Header from "../components/Header"
+import CartTable from "@/components/CartTable"
+import CartTotal from "@/components/CartTotal"
 
 const Cart: NextPage = () => {
   return (
@@ -17,10 +17,11 @@ const Cart: NextPage = () => {
       </Head>
 
       <Header />
+
       <main>
         <Container className="mb-5">
           <h1 className="my-5">
-            Carrinho.
+            Carrinho
           </h1>
 
           <CartTable />

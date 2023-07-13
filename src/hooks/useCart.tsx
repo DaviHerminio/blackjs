@@ -1,9 +1,3 @@
-// pages/cart.tsx
-import { NextPage } from "next"
-import Head from "next/head"
-import { Container } from "reactstrap"
-import Header from "../components/Header"
-
 // src/hooks/useCart.tsx
 
 import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
