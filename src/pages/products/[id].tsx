@@ -20,9 +20,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return { redirect: { destination: '/products', permanent: false } }
 }
 
-// pages/products/[id].tsx
 
-// ...
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const products = await fetchProducts()
@@ -34,9 +32,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false }
   }
 
-  // pages/products/[id].tsx
 
-// ...
 
 const Product: NextPage = (props: {
     children?: ReactNode
