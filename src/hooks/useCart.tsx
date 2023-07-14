@@ -54,4 +54,4 @@ export const CartContextProvider = (props: {
     );
   }
   
-  export const useCart = () => useContext(CartContext)
+  export const useCart = () => useContext(CartContext);
