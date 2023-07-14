@@ -21,7 +21,7 @@ const Cart: NextPage = () => {
       <main>
         <Container className="mb-5">
           <h1 className="my-5">
-            Carrinho.
+            Carrinho
           </h1>
 
           <CartTable />
