@@ -1,7 +1,7 @@
 // pages/products.tsx
-import Header from "@/components/Header";
-import ProductsList from "@/components/ProductsList";
-import { ProductType, fetchProducts } from "@/services/products";
+import Header from "../components/Header";
+import ProductsList from "../components/ProductsList";
+import { ProductType, fetchProducts } from "../services/products";
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { ReactNode } from "react";
