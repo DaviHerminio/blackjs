@@ -34,25 +34,30 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 
 
-const Product: NextPage = (props: {
+  const Product: NextPage = (props: {
     children?: ReactNode
     product?: ProductType
   }) => {
+    if (!props.product) {
+      return null; // Ou qualquer tratamento de fallback adequado
+    }
+  
     return (
       <div>
         <Head>
-          <title>{props.product!.name}</title>
-          <meta name="description" content={props.product!.description} />
+          <title>{props.product.name}</title>
+          <meta name="description" content={props.product.description} />
           <link rel="icon" href="/favicon.ico" />
         </Head>
   
         <Header />
   
         <Container className="mt-5">
-          <ProductDetails product={props.product!} />
+          <ProductDetails product={props.product} />
         </Container>
       </div>
     )
   }
   
-  export default Product
+  export default Product;
+  
